@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* config tailwind css */
+@theme {
+  --color-primary: red;
+  --color-primary-dark: green;
+
+  /* screen */
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 991px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1530px;
+}
