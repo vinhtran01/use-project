@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 const Header = () => {
   return (
-    <header className=" bg-gray-200">
+    <header className=" bg-gray-200 dark:bg-gray-900">
       <nav
         className="flex items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -40,24 +40,36 @@ const Header = () => {
         <div className="hidden lg:flex lg:gap-x-12">
           <a
             href="#"
-            className="text-sm/6 font-semibold  text-primary dark:text-primary-dark "
+            className="text-sm/6 font-semibold  text-gray-900 dark:text-white "
           >
             Product
           </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          <a
+            href="#"
+            className="text-sm/6 font-semibold text-gray-900 dark:text-white"
+          >
             Features
           </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          <a
+            href="#"
+            className="text-sm/6 font-semibold text-gray-900 dark:text-white"
+          >
             Marketplace
           </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          <a
+            href="#"
+            className="text-sm/6 font-semibold text-gray-900 dark:text-white"
+          >
             Company
           </a>
         </div>
         <div className="hidden items-center gap-4 lg:flex lg:flex-1 lg:justify-end">
           <ThemeToggle />
 
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          <a
+            href="#"
+            className="text-sm/6 font-semibold text-gray-900 dark:text-white"
+          >
             Log in <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
@@ -156,7 +168,7 @@ function ThemeToggle() {
   return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="p-2 border rounded dark:bg-gray-800 dark:text-white"
+      className="p-2 border rounded dark:bg-gray-800 dark:text-white cursor-pointer"
     >
       {theme === "dark" ? "🌞 Light Mode" : "🌙 Dark Mode"}
     </button>
